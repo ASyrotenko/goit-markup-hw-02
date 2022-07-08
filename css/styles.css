@@ -76,10 +76,124 @@ body {
   color: var(--primary-text-color);
 }
 
-/* main studio */
+/* main studio banner */
+
+.section-banner {
+  background-color: var(--darck-bg-color);
+}
+
+.section-banner .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: var(--light-text-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-banner .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
+  background-color: var(--accent-text-color);
+  border: none;
+}
+
+/* main studio features */
+
+.section-features .title.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.section-features .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* main studio what are we doing */
+
+.section-doing .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* main our team */
+
+.section-team {
+  background-color: var(--gray-bg-color);
+}
+
+.section-team .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.section-team .title.sub {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.section-team .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 
 /* footer */
 
 .footer {
   background-color: var(--darck-bg-color);
+}
+
+.footer .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+  font-style: normal;
+}
+
+.footer .link.contact {
+  color: var(--translight-text-color);
 }
