@@ -1,0 +1,85 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --darck-text-color: #000000;
+  --light-text-color: #ffffff;
+  --translight-text-color: #ffffff99;
+  --main-bg-color: #ffffff;
+  --darck-bg-color: #2f303a;
+  --gray-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto';
+  background-color: var(--main-bg-color);
+}
+
+/* logo */
+
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+  text-decoration: none;
+}
+
+.logo.top {
+  color: var(--darck-text-color);
+}
+
+.logo.bottom {
+  color: var(--light-text-color);
+}
+
+/* list-item */
+
+.list-item {
+  list-style: none;
+}
+
+/* link */
+
+.link {
+  text-decoration: none;
+}
+
+/* header */
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.header .site-nav .link {
+  color: var(--title-text-color);
+}
+
+.header .site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+.header .site-nav .link:hover,
+.header .site-nav .link:focus,
+.header .contact.list .link:hover,
+.header .contact.list .link:focus {
+  color: var(--accent-text-color);
+}
+
+.header .contact.list .link {
+  color: var(--primary-text-color);
+}
+
+/* main studio */
+
+/* footer */
+
+.footer {
+  background-color: var(--darck-bg-color);
+}
