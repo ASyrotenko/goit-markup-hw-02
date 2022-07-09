@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   background-color: var(--main-bg-color);
 }
 
@@ -200,7 +200,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.section-filter .button {
+.section-portfolio .button {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -212,8 +212,8 @@ body {
   border: none;
 }
 
-.section-filter .button:hover,
-.section-filter .button:focus {
+.section-portfolio .button:hover,
+.section-portfolio .button:focus {
   background-color: var(--accent-text-color);
   color: var(--light-text-color);
 }
