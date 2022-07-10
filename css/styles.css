@@ -6,9 +6,11 @@
   --text-transpwhite-color: #ffffff99;
   --accent-color: #2196f3;
   --bg-white-color: #ffffff;
-  --bg-darck-color: #2f303a;
+  --bg-dark-color: #2f303a;
   --bg-light-color: #f5f4fa;
 }
+
+/* general rules */
 
 body {
   background-color: var(--bg-white-color);
@@ -19,4 +21,151 @@ body {
   letter-spacing: 0.03em;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.title {
+  color: var(--text-title-color);
+}
+
+.title.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* logo */
+
+.logo {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo.top {
+  color: var(--text-black-color);
+}
+
+.logo.bottom {
+  color: var(--text-white-color);
+}
+
+/* header */
+
+.site-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-title-color);
+}
+
+.contact .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* main banner */
+
+.section-banner {
+  background-color: var(--bg-dark-color);
+}
+
+.section-banner .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+}
+
+.section-banner .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--text-white-color);
+  font-family: inherit;
+}
+
+/* main features */
+
+.section-features .title {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* main what we are doing */
+
+.section-doing .title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* main our team */
+
+.section-team {
+  background-color: var(--bg-light-color);
+}
+
+.section-team .title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-team .title.sub {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.section-team .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--bg-dark-color);
+}
+
+.address .link {
+  color: var(--text-white-color);
+  font-style: normal;
+}
+
+.footer .contact {
+  color: var(--text-transpwhite-color);
+}
