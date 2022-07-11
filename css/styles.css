@@ -4,7 +4,8 @@
   --text-black-color: #000000;
   --text-white-color: #ffffff;
   --text-transpwhite-color: #ffffff99;
-  --accent-color: #2196f3;
+  --accent-primary-color: #2196f3;
+  --accent-secondary-color: #188ce8;
   --bg-white-color: #ffffff;
   --bg-dark-color: #2f303a;
   --bg-light-color: #f5f4fa;
@@ -33,6 +34,10 @@ body {
   color: var(--text-title-color);
 }
 
+.button {
+  cursor: pointer;
+}
+
 .title.hidden {
   position: absolute;
   width: 1px;
@@ -53,7 +58,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: var(--accent-primary-color);
 }
 
 .logo.top {
@@ -84,7 +89,11 @@ body {
 .site-nav .link:focus,
 .contact .link:hover,
 .contact .link:focus {
-  color: var(--accent-color);
+  color: var(--accent-primary-color);
+}
+
+.header .current {
+  color: var(--accent-primary-color);
 }
 
 /* main banner */
@@ -108,9 +117,14 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: var(--accent-primary-color);
   color: var(--text-white-color);
   font-family: inherit;
+}
+
+.section-banner .button:hover,
+.section-banner .button:focus {
+  background-color: var(--accent-secondary-color);
 }
 
 /* main features */
@@ -134,6 +148,10 @@ body {
 
 .section-team {
   background-color: var(--bg-light-color);
+}
+
+.section-team .list-item {
+  background-color: var(--bg-white-color);
 }
 
 .section-team .title {
@@ -181,7 +199,7 @@ body {
 
 .section-portfolio .button:hover,
 .section-portfolio .button:focus {
-  background-color: var(--accent-color);
+  background-color: var(--accent-primary-color);
   color: var(--text-white-color);
 }
 
@@ -198,4 +216,9 @@ body {
 
 .footer .contact {
   color: var(--text-transpwhite-color);
+}
+
+.footer .contact.link:hover,
+footer .contact.link:focus {
+  color: var(--accent-primary-color);
 }
