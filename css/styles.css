@@ -2,13 +2,13 @@
   --text-primary-color: #757575;
   --text-title-color: #212121;
   --text-black-color: #000000;
-  --text-white-color: #ffffff;
   --text-transpwhite-color: #ffffff99;
+  --text-white-color: #ffffff;
   --accent-primary-color: #2196f3;
   --accent-secondary-color: #188ce8;
   --bg-white-color: #ffffff;
-  --bg-dark-color: #2f303a;
   --bg-light-color: #f5f4fa;
+  --bg-dark-color: #2f303a;
 }
 
 /* general rules */
@@ -22,23 +22,23 @@ body {
   letter-spacing: 0.03em;
 }
 
-.link {
+[class*='link'] {
   text-decoration: none;
 }
 
-.list-item {
+[class$='item'] {
   list-style: none;
 }
 
-.title {
+[class$='title'] {
   color: var(--text-title-color);
 }
 
-.button {
+[class$='btn'] {
   cursor: pointer;
 }
 
-.title.hidden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -61,38 +61,38 @@ body {
   color: var(--accent-primary-color);
 }
 
-.logo.top {
+.header-logo {
   color: var(--text-black-color);
 }
 
-.logo.bottom {
+.footer-logo {
   color: var(--text-white-color);
 }
 
 /* header */
 
-.site-nav .link {
+.header-nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-title-color);
 }
 
-.contact .link {
+.header-contacts-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contact .link:hover,
-.contact .link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-primary-color);
 }
 
-.header .current {
+.current {
   color: var(--accent-primary-color);
 }
 
@@ -102,7 +102,7 @@ body {
   background-color: var(--bg-dark-color);
 }
 
-.section-banner .title {
+.banner-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -112,7 +112,7 @@ body {
   color: var(--text-white-color);
 }
 
-.section-banner .button {
+.banner-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -122,14 +122,14 @@ body {
   font-family: inherit;
 }
 
-.section-banner .button:hover,
-.section-banner .button:focus {
+.banner-btn:hover,
+.banner-btn:focus {
   background-color: var(--accent-secondary-color);
 }
 
 /* main features */
 
-.section-features .title {
+.features-title {
   font-weight: 700;
   font-size: inherit;
   line-height: 1.14;
@@ -138,7 +138,7 @@ body {
 
 /* main what we are doing */
 
-.section-doing .title {
+.doing-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -150,23 +150,24 @@ body {
   background-color: var(--bg-light-color);
 }
 
-.section-team .list-item {
+.team-item {
   background-color: var(--bg-white-color);
 }
 
-.section-team .title {
+.team-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.section-team .title.sub {
+.team-sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
-.section-team .text {
+.team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -175,19 +176,13 @@ body {
 
 /* main portfolio */
 
-.section-portfolio .title {
-  font-weight: 700;
+.portfolio-projects-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.section-portfolio .text {
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-.section-portfolio .button {
+.portfolio-filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -197,10 +192,15 @@ body {
   font-family: inherit;
 }
 
-.section-portfolio .button:hover,
-.section-portfolio .button:focus {
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
   background-color: var(--accent-primary-color);
   color: var(--text-white-color);
+}
+
+.portfolio-projects-text {
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /* footer */
@@ -209,16 +209,17 @@ body {
   background-color: var(--bg-dark-color);
 }
 
-.address .link {
+.footer-map-link {
   color: var(--text-white-color);
   font-style: normal;
 }
 
-.footer .contact {
+.footer-contacts-link {
   color: var(--text-transpwhite-color);
+  font-style: normal;
 }
 
-.footer .contact.link:hover,
-footer .contact.link:focus {
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
   color: var(--accent-primary-color);
 }
