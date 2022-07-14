@@ -34,7 +34,7 @@ body {
   color: var(--text-title-color);
 }
 
-[class$='btn'] {
+[class*='btn'] {
   cursor: pointer;
 }
 
@@ -131,7 +131,7 @@ body {
 
 .features-title {
   font-weight: 700;
-  font-size: inherit;
+
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -189,6 +189,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-black-color);
   background-color: var(--bg-light-color);
+  font-family: inherit;
+}
+
+.portfolio-filter-btn-current {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--text-white-color);
+  background-color: var(--accent-primary-color);
   font-family: inherit;
 }
 
